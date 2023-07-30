@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2? family= Montserrat:wght@200 & display=swap" rel="stil sayfası">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>Web Proje Final</title>
+    
+    <style>
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+font-family: 'Roboto Mono', monospace;
+}
+
+.h-bg{
+background-image: url('image/final_header7.jpeg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+.wrapper{
+  display: flex;
+}
+.wrapper .static-txts{
+  margin-top: 8.2px;
+  margin-left: 30%;
+  color: white;
+  font-size: 65px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: white;
+  font-size: 65px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin-top: 2%;
+  background: black;
+  border-left: 2px solid white;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}     
+
+.galeri img{
+width: 200px;
+height: 200px;
+}
+
+.galeri img:hover{
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 2%;
+  opacity: 0.8;
+}
+
+
+.Content input{
+width: 100%;
+height: 40% ;
+}
+
+.Content textarea{
+  width: 100%;
+}
+
+        .bg-soft-black{
+            background-color: #0000;
+        }
+
+        .bg-bdark{
+          color:#fcfcfc ;
+        }
+        h5{
+          margin-top: 21%;
+        }
+          
+             .baslik{
+                margin-left: 35%;
+              }
+    .bg-black{
+      color: rgb(250, 248, 248);
+    }
+    h3{
+      position:absolute; 
+      z-index:-1
+    }
+    h3:hover{
+      z-index:1
+    }
+
+
+
+    </style>
+</head>
+  <div class="h-bg">
+  <header>
+    <div id="home"></div>
+    <nav class="navbar navbar-dark bg-soft-dark text-white navbar-expand-lg">
+        <div class="container py-3">
+            <a href="#lavina" class="navbar-brand font-weight-bold"><span class="text-warning">LA</span>VİNA</a>
+   
+           <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-lavina" aria-controls="navbar-lavina">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+       
+             <div class="collapse navbar-collapse" id="navbar-lavina">
+           
+               <ul class="navbar-nav ml-auto">
+                   <li class="nav-item px-2" ><a href="#home" class="nav-link text-white">Ana Sayfa</a></li>
+                   <li class="nav-item px-2"><a href="#about" class="nav-link text-white">Hakkında</a></li>
+                   <li class="nav-item px-2"><a href="#service" class="nav-link text-white">Hizmet</a></li>
+                   <li class="nav-item px-2"><a href="#resume" class="nav-link text-white">Devam Et</a></li>
+                   <li class="nav-item px-2"><a href="#portfolio" class="nav-link text-white">Portfolio</a></li>
+                   <li class="nav-item px-2"><a href="#blog" class="nav-link text-white">Blog</a></li>
+                   <li class="nav-item"><a href="#content" class="nav-link text-white">İletişim</a></li>
+               </ul>
+             </div>
+           </div>
+       </nav>
+       <div class="text-white text-center font-weight-bold">
+        <h5>WEB SİTEME HOŞ GELDİNİZ</h5>
+        <a href="" class="text-white ml-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="" class="text-white ml-3"><i class="fab fa-twitter"></i></a>
+        <a href="" class="text-white ml-3"><i class="fab fa-instagram"></i></a>
+        <a href="" class="text-white ml-3"><i class="fab fa-behance"></i></a>
+        <a href="" class="text-white ml-3"><i class="fab fa-dribbble"></i></a>
+       </div>
+
+<div class="wrapper">
+    <div class="static-txts">Ben</div>
+    <ul class="dynamic-txts">
+        <li><span>Angel Lavina</span></li>
+        <li><span>Web Tasarımcıyım</span></li>
+        <li><span>Fotoğrafcıyım</span></li>
+    </ul> 
+</div>
+<div class="text-center">
+  <button type="button" class="btn btn-warning border-warning rounded-pill mr-4 mb-5">Yaptıklarım</button>
+  <button type="button" class="btn btn-warning border-warning rounded-pill ml-3 mb-5">Bana Ulaş</button>
+</div>
+
+  </header>
+  <section>
+  </div>
+  <div id="about"></div>
+    <div class="bg-dark bg-bdark">
+      <div class="container ">
+        <div class="text-center p-5">
+          <h4 class="text-white">About me</h4>  
+        </div>
+      <hr class="baslik" width="30%">
+        <div class=" mt-5 mb-5 ">
+          <div class="row">
+              <div class="col-md-6 align-self-auto">
+                  <div class="text-right mb-5 rounded">
+                      <a href=""><img src="image/fina_about.jpeg" alt=""></a>
+                  </div>
+              </div>
+              <div class="col-md-6 align-self-auto text-left text-white ">
+                  <div class="">
+                      <h2>Ben <span class="text-warning">Lavina</span> </h2>
+                      <h6>Web Tasarım & Fotograf</h6>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis earum, ab minus ratione vel aperiam esse culpa rem qui laborum fuga odit sequi alias dignissimos quia laboriosam nesciunt perferendis mollitia?</p>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni fugiat, vel eos obcaecati sit tempora reiciendis dolores praesentium laborum quas enim corporis incidunt quisquam. Cumque ut repellat quod mollitia necessitatibus.</p>
+                  </div>
+              </div>
+          </div>
+      </div>       
+
+
+</div>
+<div id="service"></div>
+  <div class="bg-secondary"> 
+      <div class="container ">
+        <div class="text-center p-5">
+          <h4 class="text-white">Servislerim</h4>  
+        </div>
+      <hr class="baslik" width="30%">
+
+        <div class=" mt-5 mb-5 ">
+
+          <div class="container">
+            <div id="lavina-slider" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner text-center text-white">
+                <div class="carousel-item active">
+
+              <div class="row">    
+                <div class="col-md-3 offset-md-3 mb-5"> 
+                  <div class="card">
+                    <div class="card-body bg-dark rounded">
+                      <h4>Wep Programlama</h4>
+                      <hr>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non impedit rem voluptatibus similique quo corporis, et fugiat repellendus dolores laborum!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 ml-5">
+                  <div class="card">
+                    <div class="card-body bg-dark rounded">
+                      <h4>Düzenli Tasarım</h4>
+                      <hr>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus vitae dolor nostrum eos pariatur velit corr et fugiat repellendus dolores laborum!</p>
+                    </div>
+                  </div>  
+                </div> 
+              </div>
+
+            </div>
+          <div class="carousel-item">
+            <div class="row">    
+              <div class="col-md-3 offset-md-3 mb-5"> 
+                <div class="card">
+                  <div class="card-body bg-dark rounded ">
+                    <h4>SEO Optimizasyonu</h4>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non impedit rem voluptatibus similique quo corporis, et fugiat repellendus dolores laborum!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 ml-5">
+                <div class="card">
+                  <div class="card-body bg-dark rounded">
+                    <h4>Uİ UX Tasarım</h4>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus vitae dolor nostrum eos pariatur velit corr et fugiat repellendus dolores laborum!</p>
+                  </div>
+                </div>  
+              </div> 
+            </div>
+          </div>
+        </div>
+        <a href="#lavina-slider" class="carousel-control-prev" data-slide="prev"> <span class="carousel-control-prev-icon"></span></a>
+        <a href="#lavina-slider" class="carousel-control-next"data-slide="next" ><span class="carousel-control-next-icon"></span></a>
+      </div>
+    </div>
+              </div>
+              </div>
+            </div>
+
+<div class="bg-dark bg-bdark">
+
+  <div class="text-center p-5">
+    <h4 class="text-white">Portfolyo</h4>  
+  </div>
+<hr class="baslik" width="30%">
+<div class="text-center">
+  <button type="button" class="btn btn-warning border-warning rounded-pill mr-4 mb-5">Hepsi</button>
+</div>
+
+ <div class="galeri">
+  <div class="row">
+    <div class="col-6 col-sm-4 text-center mt-5 mb-5">
+      <a href=""><img class="rounded" src="image/photo-1623658565182-1c932c3ce985.jpeg" alt="1"></a></div>
+      <div class="col-6 col-sm-4 text-center mt-5 mb-5">
+      <a href=""><img class="rounded" src="image/photo-1562577309-2592ab84b1bc.jpeg" alt="2"></a></div>
+      <div class="col-6 col-sm-4 text-center mt-5 mb-5">
+      <a href=""><img class="rounded" src="image/photo-1584441405886-bc91be61e56a.jpeg" alt="3"></a></div>
+      
+</div>    
+<div class="row">
+    <div class="col-6 col-sm-4 text-center mt-5 mb-5">
+    <a href=""><img class="rounded" src="image/photo-1522542550221-31fd19575a2d.jpeg" alt="4"> </a> </div>
+    <div class="col-6 col-sm-4 text-center mt-5 mb-5">
+    <a href=""><img class="rounded" src="image/photo-1618044733300-9472054094ee.jpeg" alt="5"> </a></div>
+    <div class="col-6 col-sm-4 text-center mt-5 mb-5">
+    <a href=""><img class="rounded" src="image/photo-1584714268709-c3dd9c92b378.jpeg" alt="6"> </a>
+    </div>
+  </div>
+ </div>
+ </div>
+</div>
+
+  <div class="bg-secondary bg-bdarg">
+  <div class="text-center p-5">
+    <h4 class="text-white">
+      <div class="text-center p-5">
+          <h4 class="text-white">Referanslar</h4>  
+        </div>
+      <hr class="baslik" width="30%">
+
+  <div class=" mt-5 mb-5 ">
+    <div class="container">
+      <div id="lavinas-slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner text-center text-white">
+          <div class="carousel-item active ">
+           <img src="image/testimonial-1.jpg" alt="slide1"  class="rounded-circle">
+           <p class="ml-5 mr-5 mt-5"><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, corporis enim ut accusantium qui ullam sit. Libero accusamus hic perferendis quos quasi quo facere quidem accusantium. Tempore consequatur recusandae itaque?</small></p>
+           <h5><small>SABRİ ÖVEL / İş Adamı</small> </h5>
+          </div>
+          <div class="carousel-item ">
+            <img src="image/testimonial-2.jpg" alt="slide2"  class="rounded-circle">
+            <p class="ml-5 mr-5 mt-5"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusantium consequatur corporis! Velit sunt, est adipisci fuga atque blanditiis dolor nobis animi iure magnam, dignissimos illum, dolore qui vel! Alias.</small></p>
+            <h5><small>GÜL ÖVÜNÇ / Apple kurucusu</small> </h5>
+          </div>
+          <div class="carousel-item ">
+            <img src="image/testimonial-3.jpg" alt="slide3"  class="rounded-circle">
+            <p class="ml-5 mr-5 mt-5"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae doloribus dolor distinctio adipisci! Minima adipisci architecto eveniet sint velit culpa eum distinctio iure ut recusandae commodi, labore quidem soluta assumenda!</small></p>
+            <h5> <small>RAŞİT ÇİÇEK / Google CEO</small> </h5>
+          </div>
+          <div class="carousel-item ">
+            <img src="image/testimonial-4.jpg" alt="slide4" class="rounded-circle">
+            <p class="ml-5 mr-5 mt-5"> <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus blanditiis illo provident voluptatem modi velit fugiat nulla. Eveniet enim distinctio ratione voluptatum non dolore numquam porro deserunt, sed nostrum! Aliquam! </small></p>
+             <h5> <small>MERYEM GÜZEL / Facebook CEO</small> </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="Content">
+<div id="content">
+    <div class="bg-dark bg-bdark">
+      <div class="text-center p-5">
+        <h4 class="text-white">İletişim</h4>  
+      </div>
+    <hr class="baslik" width="30%">
+
+    <div class="row">
+      <div class="col-lg-10 offset-lg1 col-md-12">
+        <p class="form-message"></p>
+        <br>
+        <form class="contact-form form" id="contact-form">
+          <div class="controls">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center h-100">
+                <div class="form-group has-eror has-danger">
+                  <input class="bg-dark border-top-0 ml-5 mt-5 text-white" id="form-name" type="text" name="name" placeholder="name" required="required"> 
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center h-100">
+                <div class="form-group has-eror has-danger">
+                  <input class="bg-dark border-top-0 mr-5 mt-5 text-white" id="form-subject" required="required" placeholder="Subject" name="Subject" type="text">
+                </div>
+              </div>
+              <div class="col-lg-12 ml-5 col-md-12 d-flex align-items-center justify-content-center h-100">
+                <div class="form-group has-eror has-danger">
+                  <input class="bg-dark border-top-0 m-5 text-white" id="form-email" required="required" placeholder="Email" name="email" type="email">
+                </div>
+              </div>
+              <div class="col-md-12 ml-5 d-flex align-items-center justify-content-center h-100">
+                <div class="form-group">
+                  <textarea class="bg-dark border-top-0 m-5 text-white" id="form_message" name="message" placeholder="Message" rows="4" required="required"></textarea>
+                </div>
+              </div>
+              <div class="col-md-12 m-5 d-flex align-items-center justify-content-center h-100">
+                <button class="bg-dark text-white border-top-0 text-white" type="submit" class="after-btn" data-text="Send Message">Send Message</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </section>
+  <footer>
+    <div class="bg-dark">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.2238835110943!2d30.340989115249627!3d37.690940824751465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c42c1fce470209%3A0x22211ba52f6bb80c!2sBurdur%20Mehmet%20Akif%20Ersoy%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1623680912058!5m2!1str!2str" 
+      width="100%" height="450" style="border:2px black;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="text-white text-center font-weight-bold">
+        <a href="" class="text-white ml-3 mt-5"><i class="fab fa-facebook-f"></i></a>
+        <a href="" class="text-white ml-3 mt-5"><i class="fab fa-twitter"></i></a>
+        <a href="" class="text-white ml-3 mt-5"><i class="fab fa-instagram"></i></a>
+        <a href="" class="text-white ml-3 mt-5"><i class="fab fa-behance"></i></a>
+        <a href="" class="text-white ml-3 mt-5"><i class="fab fa-dribbble"></i></a>
+        <h6 ><small> Copyright © 2020 - Tüm Hakları Saklıdır.</small></h6>
+        <h6 class=""> <small>Sevimli Temalar tarafından tasarlanmıştır.</small> </h6>
+       
+    </div>
+  </footer>
+  </div>
+
+
+</body>
+</html>
